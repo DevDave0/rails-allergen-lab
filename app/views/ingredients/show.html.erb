@@ -1,0 +1,9 @@
+<h1><%= @ingredient.name %></h1>
+
+
+
+<div> <%= button_to "Edit Ingredient", edit_ingredient_path(@ingredient) %> </div><br>
+
+<div>
+<%= button_to "Delete this Ingredient", ingredient_path(@ingredient), :method => :delete %>
+</div>

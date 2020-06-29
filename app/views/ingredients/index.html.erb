@@ -1,0 +1,16 @@
+<h1>Ingredients</h1>
+
+    <ul>
+        <% @ingredients.each do |ingredient| %>
+            <li><%= link_to ingredient.name, ingredient_path(ingredient.id) %></li>
+        <% end %>
+    </ul>
+
+
+<% @ingredients.each do |ingredient| %>
+   
+    <%= ingredient.allergens %>
+<% end %>
+
+
+Allergen.all

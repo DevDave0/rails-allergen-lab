@@ -1,0 +1,19 @@
+<h1> <%= @recipe.name %></h1>
+
+<%= @recipe.user.name %><br>
+
+
+<div>
+
+<%= link_to "Edit this recipe", edit_recipe_path(@recipe) %>
+
+<%= link_to "All Recipes", recipes_path %><br>
+
+<div><br>
+<%= button_to "Delete this recipe", recipe_path(@recipe), :method => :delete %>
+</div>
+
+
+
+</div>
+
